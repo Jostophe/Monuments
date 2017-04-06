@@ -8,7 +8,7 @@
     $db = new SQLite3('sql.db');
     $db->exec('INSERT INTO R VALUES (3)');
 
-    echo "hahaha, blahblah blah";
+    echo "hahaha, blahblah blah rhonph";
 
     $results = $db->query('SELECT A+A FROM R');
     echo "<ul>"; 
