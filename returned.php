@@ -6,11 +6,11 @@
 <body>
 <h1>Objets plus disponibles</h1>
 <?php
-if (!array_key_exists('Région',$_POST)){
+if (!array_key_exists('id',$_POST)){
 	echo "<p>Tu n'as rien selectionné !</p>";
 } else {
-	$ref=$_POST['Région'];
-	$delete = 'DELETE FROM monuments WHERE "REF" = \'' . $ref . '\'';
+	$id=$_POST['id'];
+	$delete = 'DELETE FROM monuments WHERE "REG" = \'' . $id . '\'';
 	$db = new SQLite3('DATA.db');
 	$results = $db->exec($delete);
 	echo "<p>L'objet est supprimé de la base !</p>";
