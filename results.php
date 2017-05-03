@@ -84,5 +84,7 @@ if ($description) {
 echo 'offset=', intval($offset) + 10;
 echo "'>&gt;&gt;</a>";
 ?>
+<br>
+<a href="http://www.google.fr">Faire une recherche</a>
 </body>
 </html>
