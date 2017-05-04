@@ -1,7 +1,8 @@
 <html>
 <head>
-   <meta charset="utf-8"/>
-     <title>Monuments trouvés :</title>
+	<meta charset="utf-8"/>
+	<link rel="stylesheet" type="text/css" href="style2.css"/>
+	<title>Monuments trouvés :</title>
 </head>
 <body>
 <h1>Monuments trouvés :</h1>
@@ -41,7 +42,7 @@ if ($description) {
         'OR "COM" LIKE \'%' . $description . '%\') ';
 }
 
-$query = $query . "LIMIT 10 " . "OFFSET " . $offset ;
+$query = $query . "LIMIT 20 " . "OFFSET " . $offset ;
 
 #echo $query;
 
@@ -50,14 +51,14 @@ $results = $db->query($query);
 
 while ($row = $results->fetchArray()) {
 	$reg = $row[0];
-    echo "<tr>";
+	echo "<tr>";
 	echo "<td>",$reg,"</td>";
-    echo "<td>",$row[1],"</td>";
-    echo "<td>",$row[2],"</td>";
-    echo "<td>",$row[3],"</td>";
+	echo "<td>",$row[1],"</td>";
+	echo "<td>",$row[2],"</td>";
+	echo "<td>",$row[3],"</td>";
 	echo "<td>",$row[4],"</td>";
-    echo "<td><input type='radio' name='id' value='",$row[5],"'/></td>";
-    echo "</tr>\n";
+	echo "<td><input type='radio' name='id' value='",$row[5],"'/></td>";
+	echo "</tr>\n";
 }
 
 ?>
@@ -71,7 +72,7 @@ if ($reg) {
 if ($description) {
     echo 'descr=',$description,'&';
 }
-echo 'offset=', intval($offset) - 10;
+echo 'offset=', intval($offset) - 20;
 echo "'>&lt;&lt;</a>";
 
 echo "<a href='results.php?";
@@ -81,7 +82,7 @@ if ($reg) {
 if ($description) {
     echo 'descr=',$description,'&';
 }
-echo 'offset=', intval($offset) + 10;
+echo 'offset=', intval($offset) + 20;
 echo "'>&gt;&gt;</a>";
 ?>
 <br>
