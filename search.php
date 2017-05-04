@@ -1,7 +1,8 @@
 <html>
 <head>
    <meta charset="utf-8"/>
-     <title>Monuments</title>
+   <title>Monuments</title>
+   <link rel="stylesheet" type="text/css" href="style.css"/>
 </head>
 <body>
 <h1> Trouve un monument près de chez toi ?</h1>
@@ -25,7 +26,7 @@ while ($row = $results->fetchArray()) {
 </select>
 <p>Ville / Code Postal : </p> 
 <input type="text" name="descr"/></br>
-<input type="submit" name="Go" value="Trouve mon tresor"/>
+<input type="submit" name="Go" value="GO !"/>
 </form>
 </body>
 </html>
