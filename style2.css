@@ -1,0 +1,28 @@
+h1 {
+	color: navy;
+	text-align: left;
+	text-transform: capitalize;
+	letter-spacing: 3px;
+	text-shadow: 1px 1px grey;
+	font-family: Verdana, sans-serif;
+	border-left-style: solid;
+	border-color: blue;
+	background-color: #87CEFA;
+	border-width: 5px;
+}
+
+table {
+	border-collapse: collapse;
+	width: 100%;
+}
+
+th {
+	height: 30px;
+	font-variant: small-caps;
+	font-family: Georgia, serif;
+}
+
+table, th, td {
+	border: 1px solid black;
+}
+
