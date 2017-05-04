@@ -1,0 +1,35 @@
+h1 {
+	color: navy;
+	text-align: center;
+	text-transform: uppercase;
+	letter-spacing: 3px;
+	text-shadow: 1px 1px grey;
+	font-family: Verdana, sans-serif;
+}
+
+p{
+	text-align: center;
+	font-size: 20px;
+	font-variant: small-caps;
+	font-family: Georgia, serif;
+	border-style: groove;
+	border-width: 2px;
+	border-color: navy;
+	margin: 70px 150px 20px 150px;
+}
+
+select{
+	width: 1050px;
+	margin: 70px 150px 5px 150px;
+}
+
+input[type=text]{
+	width: 1050px;
+	margin: 5px 150px 5px 150px;
+}
+
+input[type=submit]{
+	margin: 70px 150px 5px 150px;
+	width: 1050px;
+	height: 30px;
+}
