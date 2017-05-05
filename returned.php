@@ -4,7 +4,7 @@
 	<link rel="stylesheet" type="text/css" href="style.css"/>
 		<title>Objets plus disponibles</title>
 </head>
-<body>
+<body background="back.jpg">
 <h1>Objets plus disponibles</h1>
 <?php
 if (!array_key_exists('id',$_POST)){
