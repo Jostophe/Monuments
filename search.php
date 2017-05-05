@@ -4,7 +4,7 @@
    <title>Monuments</title>
    <link rel="stylesheet" type="text/css" href="style.css"/>
 </head>
-<body>
+<body background="back.jpg">
 <h1> Trouve un monument près de chez toi ?</h1>
 <p>La France regorge de monuments historiques dans toutes ses communes, mais savez vous qu'il existe différents objets mobiliers propriété publique qui sont classés au titre des monuments historiques ? Découvrez lesquels sont près de chez vous !</p>
 <form method="GET" action="results.php">
