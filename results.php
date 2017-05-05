@@ -4,7 +4,7 @@
 	<link rel="stylesheet" type="text/css" href="style2.css"/>
 	<title>Monuments trouvés :</title>
 </head>
-<body>
+<body background="back.jpg">
 <h1>Monuments trouvés :</h1>
 <form action="returned.php" method="POST">
 <table>
@@ -87,5 +87,7 @@ echo "'>&gt;&gt;</a>";
 ?>
 <br>
 <a href="http://www.google.fr">Faire une recherche</a>
+<br><p> Tu souhaites participer à améliorer le site, n'hésite pas à donner ton avis : </p>
+<a href="reviews.php">Donne ton avis</a>
 </body>
 </html>
